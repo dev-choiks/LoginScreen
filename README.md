@@ -6,7 +6,7 @@
 - 사용한 플랫폼:
   - C#, .NET Windows Forms, Visual Studio, GitHub
 - 사용한 컨트롤:
-  - TextBox, Button
+  - TextBox, Button, Lable
 - 사용한 기술과 구현한 기능:
   - Visual Studio 폼 디자이너를 활용하여 로그인 기본 UI를 기획하고 컨트롤을 배치했습니다.
   - Enter와 Leave 이벤트를 활용하여 입력창에 포커스가 갈 때 힌트 텍스트가 사라지고, 벗어나면 다시 생기는 Placeholder(안내 문구) 기능을 구현했습니다.
