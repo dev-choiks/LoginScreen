@@ -5,6 +5,11 @@ namespace LoginScreen
         public Form1()
         {
             InitializeComponent();
+
+            
+            lblErrorMsg.Text = "아이디 또는 비밀번호가 잘못되었습니다.";
+            lblErrorMsg.ForeColor = Color.Red;
+            lblErrorMsg.Visible = false; // 처음엔 숨김 처리
         }
 
         string myID = "admin";
@@ -16,11 +21,15 @@ namespace LoginScreen
             string inputPW = txtPW.Text;
             if (inputID == myID && inputPW == myPW) // 로그인 성공 조건
             {
+                //로그인 성공 시 기존에 떠있던 에러 메시지 숨김
+                lblErrorMsg.Visible = false;
                 MessageBox.Show("로그인 성공!");
             }
             else
             {
-                MessageBox.Show("아이디 또는 비밀번호가 잘못되었습니다.", "로그인 오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                // MessageBox 대신 화면의 Label(lblErrorMsg)의 Visible 속성을 변경하여 에러 표시
+                // MessageBox.Show("아이디 또는 비밀번호가 잘못되었습니다.", "로그인 오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                lblErrorMsg.Visible = true;
             }
         }
 
