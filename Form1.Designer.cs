@@ -73,7 +73,7 @@
             // btnLogin
             // 
             btnLogin.Font = new Font("한컴 말랑말랑 Bold", 16.1999989F, FontStyle.Bold, GraphicsUnit.Point, 129);
-            btnLogin.Location = new Point(68, 383);
+            btnLogin.Location = new Point(68, 382);
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(350, 70);
             btnLogin.TabIndex = 1;
